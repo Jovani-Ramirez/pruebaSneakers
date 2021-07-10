@@ -1,0 +1,34 @@
+<div class="container">
+
+    <h2 class="title">Contacto</h2>
+
+    <form [formGroup]="formGroup">
+
+        <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Nombre</mat-label>
+            <input type="email" matInput formControlName="name"
+                   placeholder="Nombre" matTooltip="Ingresa tu nombre">
+          </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Email</mat-label>
+            <input type="email" matInput formControlName="email"
+                   placeholder="Telefono" matTooltip="Ingresa tu correo">
+          </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Telefono</mat-label>
+            <input class="inp-info" type="email" matInput formControlName="phone"
+                   placeholder="Telefono" matTooltip="Ingresa tu telefono">
+          </mat-form-field>
+    </form> 
+
+    <div class="container-button">
+        <button class="btn-form" mat-raised-button (click)="send()">Enviar correo</button>
+    </div>
+
+    <div class="container-firma">
+        <p class="firma">Creado por Jovani Ramirez año 2021</p>
+    </div>
+
+</div>

@@ -1,0 +1,59 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    background: rgb(230, 226, 226);
+}
+
+.w-100 {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.example-full-width {
+    width: 200px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 25px;
+    color: #000;
+    margin-top: 10px;
+}
+
+.container-button {
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.btn-form {
+    margin: 20px auto;
+    width: 150px;
+    background: red;
+    color: #fff;
+}
+
+.btn-form:hover {
+    margin: 20px auto;
+    width: 150px;
+    background: #fff;
+    color: red;
+}
+
+.container-firma {
+    width: 100%;
+}
+
+.firma {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 720px) {
+    .firma {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,37 @@
+  <mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+      <button type="button" mat-button (click)="drawer.toggle()"><mat-icon class="i-style">close</mat-icon></button>
+      <div class="menu">
+        <button class="btn-menu" mat-raised-button  (click)="scroll(presentation)">El origen</button>
+        <button class="btn-menu" mat-raised-button  (click)="scroll(creation)">La Creación</button>
+        <button class="btn-menu" mat-raised-button  (click)="scroll(gallery)">Galeria</button>
+        <button class="btn-menu" mat-raised-button  (click)="scroll(form)">Contacto</button>
+      </div>
+    </mat-drawer>
+    
+    <div class="example-sidenav-content">
+      <button type="button" mat-button (click)="drawer.toggle()"><mat-icon class="i-style">menu</mat-icon> </button>
+      <h2 class="prim" #inicio>Historia Pokemon</h2>
+      <div class="container-img">
+        <img class="pokeball" src="../../../assets/img/pokeball.png" alt="">
+      </div>
+    </div>
+
+    <div #presentation class="presentation">
+      <app-presentation></app-presentation>
+    </div>
+
+     <div #creation>
+      <app-creation></app-creation>
+    </div>
+
+    <div #gallery>
+      <app-gallery></app-gallery>
+    </div>
+
+    <div #form>
+      <button class="btn-i" mat-raised-button  (click)="scroll(inicio)">Ir al inicio</button>
+      <app-form></app-form>
+    </div>
+
+  </mat-drawer-container>
